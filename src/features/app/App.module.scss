@@ -1,0 +1,14 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #363535;
+  color: antiquewhite;
+  height: 100vh;
+
+  .taskAndLinesContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    //flex-direction: column;
+  }
+}
