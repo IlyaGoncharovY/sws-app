@@ -1,0 +1,19 @@
+.tableHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid wheat;
+
+  .tableHeaderDescription {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border-right: 1px solid wheat;
+    padding: 10px;
+  }
+
+  .tableHeaderLines {
+    flex: 5;
+    padding: 10px;
+  }
+}
