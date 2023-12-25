@@ -1,0 +1,10 @@
+.headerContainer {
+  display: flex;
+  gap: 25px;
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid wheat;
+
+  .headerTitle {
+    cursor: pointer;
+  }
+}
