@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
-import App from './App';
+import App from './features/app/App';
 import {store} from './store/store';
 
 const root = ReactDOM.createRoot(
