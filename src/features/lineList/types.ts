@@ -20,7 +20,7 @@ export type LinesListResponse = LinesListResponseChild[];
  * @type total
  */
 export type LinesListResponseChild = {
-    child: null | [];
+    child: null | LinesListResponseChild[];
     equipmentCosts: number;
     estimatedProfit: number;
     id: number;
@@ -131,4 +131,14 @@ export type ResponseAddNewLineTypeCurrent = {
 	salary: number;
 	supportCosts: number;
 	total: number;
+}
+
+/**
+ * ResponseDeleteLine
+ * @type current
+ * @type changed
+ */
+export type ResponseDeleteLine = {
+	current: null;
+	changed: any[];
 }
