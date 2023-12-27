@@ -22,7 +22,9 @@ export const InputGroup: React.FC<IInputGroup> =  React.memo(({isEditing,
   handleInputChange,
 }) => {
 
-  const properties: PropertyType[] = ['rowName', 'equipmentCosts', 'estimatedProfit', 'machineOperatorSalary', 'mainCosts'];
+  const properties: PropertyType[] = [
+    'rowName', 'equipmentCosts', 'estimatedProfit', 'machineOperatorSalary', 'mainCosts',
+  ];
 
   return (
     <>
