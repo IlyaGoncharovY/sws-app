@@ -8,8 +8,9 @@ export default function TaskListContainer() {
   return (
     <div className={s.taskListContainer}>
       {DataForMainTable.map((el) =>
-        <div key={el.id}>
-          <img src={`${menuIIcon}`} alt="menuI_Icon"/> {el.title}
+        <div key={el.id} className={s.item}>
+          <img src={`${menuIIcon}`} alt="menuI_Icon"/>
+          {el.title}
         </div>,
       )}
     </div>
