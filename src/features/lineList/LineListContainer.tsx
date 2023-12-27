@@ -1,11 +1,14 @@
 import React from 'react';
 
 import {SWSApi} from '../../api/SWSApi';
-import LineListItem from './item/LineListItem';
+import addFolderImg from '../../assects/img/addFolder.png';
+import {RequestAddNewLineType} from './types';
+
+import {LineListItem} from './item/LineListItem';
+import HeaderLines from './headerLines/HeaderLines';
 
 import s from './LineListContainer.module.scss';
-import HeaderLines from './headerLines/HeaderLines';
-import {RequestAddNewLineType} from './types';
+import {SuperButton} from './components/buttons/button/SuperButton';
 
 const eID = process.env.REACT_APP_E_ID;
 
@@ -62,11 +65,16 @@ export default function LineListContainer() {
     <div className={s.lineListContainer}>
       <table>
         <HeaderLines/>
-        {Lines && Lines.map((line) =>
-          <LineListItem key={line.id} line={line} eID={+eID!}/>,
+        {Lines && Lines.map((line, index) =>
+          <LineListItem key={line.id} line={line} eID={+eID!} parentId={null} indentLevel={index}/>,
         )}
       </table>
-      <button onClick={handleAddNewLine} disabled={addNewLineIsLoading}>add lines</button>
+      <SuperButton
+        iconSrc={`${addFolderImg}`}
+        alt={'addParent'}
+        onClickAdd={handleAddNewLine}
+        isDisabled={addNewLineIsLoading}
+      />
       {addNewLineIsLoading && <div>....добавление</div>}
       {addNewLineError && <h1>Ошибка при добавлении линии</h1>}
     </div>
