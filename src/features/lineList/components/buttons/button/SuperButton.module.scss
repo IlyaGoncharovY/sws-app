@@ -1,0 +1,10 @@
+img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
