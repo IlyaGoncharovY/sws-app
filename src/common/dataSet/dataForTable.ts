@@ -30,8 +30,6 @@ export const DataForMainTable: dataType[] = [
 ];
 
 export const DataForHeader: dataType[] = [
-  {id: 1, title: '[]'},
-  {id: 2, title: '<='},
-  {id: 3, title: 'Промсотр'},
-  {id: 4, title: 'Управление'},
+  {id: 1, title: 'Промсотр'},
+  {id: 2, title: 'Управление'},
 ];

@@ -5,7 +5,7 @@ import {
   RequestAddNewLineType,
   ResponseAddNewLineType,
   ResponseDeleteLine,
-} from '../features/lineList/types';
+} from '../features/lineList/';
 
 export const SWSApi = createApi({
   reducerPath: 'SWSApi',

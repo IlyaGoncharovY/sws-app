@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HeaderContainer from '../header/HeaderContainer';
-import LineListContainer from '../lineList/LineListContainer';
+import {LineListContainer} from '../lineList';
 import TaskListContainer from '../taskList/TaskListContainer';
 import TableHeader from './tableHeader/TableHeader';
 
