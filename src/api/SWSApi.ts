@@ -7,6 +7,10 @@ import {
   ResponseDeleteLine,
 } from '../features/lineList/';
 
+// const baseUrl = process.env.NODE_ENV === 'production'
+//   ? 'https://185.244.172.108:8081/'
+//   : 'http://185.244.172.108:8081/';
+
 export const SWSApi = createApi({
   reducerPath: 'SWSApi',
   tagTypes: ['Post_NewLine'],

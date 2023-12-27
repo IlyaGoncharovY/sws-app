@@ -109,7 +109,7 @@ export const useListItemHook = (
       supportCosts: 0,
     };
     await addNewLine({newLine: newLine, eID: +eID!});
-  }, [addNewLine]);
+  }, [addNewLine, line.id, eID]);
 
   /**
    * async function for update data

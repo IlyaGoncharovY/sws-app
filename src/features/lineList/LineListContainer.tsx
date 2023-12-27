@@ -41,7 +41,7 @@ export default function LineListContainer() {
   }
 
   if (error) {
-    return <h1>{`Произошла ошибка ${error}`}</h1>;
+    return <h1 className={s.errorMessage}>{'Произошла ошибка c данными :('}</h1>;
   }
 
   const handleAddNewLine = async () => {
