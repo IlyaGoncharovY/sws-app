@@ -1,8 +1,10 @@
+@import "src/common/style/variables";
+
 .appContainer {
   display: flex;
   flex-direction: column;
   background-color: #434343;
-  color: antiquewhite;
+  color: $colorText;
   height: 100vh;
 
   .taskAndLinesContainer {
