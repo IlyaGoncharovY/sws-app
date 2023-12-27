@@ -4,6 +4,11 @@
   gap: 25px;
   border-bottom: 1px solid wheat;
 
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
   .tableHeaderDescription {
     display: flex;
     justify-content: space-between;

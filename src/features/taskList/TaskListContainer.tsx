@@ -1,5 +1,7 @@
 import React from 'react';
 import {DataForMainTable} from '../../common/dataSet/dataForTable';
+import menuIIcon from '../../assects/img/menuLogo.png';
+
 import s from './TaskListContainer.module.scss';
 
 export default function TaskListContainer() {
@@ -7,7 +9,7 @@ export default function TaskListContainer() {
     <div className={s.taskListContainer}>
       {DataForMainTable.map((el) =>
         <div key={el.id}>
-            [ ] {el.title}
+          <img src={`${menuIIcon}`} alt="menuI_Icon"/> {el.title}
         </div>,
       )}
     </div>
