@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sws-app2/static/css/main.9f273d31.css",
-    "main.js": "/sws-app2/static/js/main.a32335bf.js",
-    "static/js/27.f3abdb70.chunk.js": "/sws-app2/static/js/27.f3abdb70.chunk.js",
-    "static/media/addFolder.png": "/sws-app2/static/media/addFolder.d5a40b2ccaea55d7f08f.png",
-    "index.html": "/sws-app2/index.html"
+    "main.css": "/sws-app/static/css/main.9f273d31.css",
+    "main.js": "/sws-app/static/js/main.b0f537d1.js",
+    "static/js/27.f3abdb70.chunk.js": "/sws-app/static/js/27.f3abdb70.chunk.js",
+    "static/media/addFolder.png": "/sws-app/static/media/addFolder.d5a40b2ccaea55d7f08f.png",
+    "index.html": "/sws-app/index.html"
   },
   "entrypoints": [
     "static/css/main.9f273d31.css",
-    "static/js/main.a32335bf.js"
+    "static/js/main.b0f537d1.js"
   ]
 }
