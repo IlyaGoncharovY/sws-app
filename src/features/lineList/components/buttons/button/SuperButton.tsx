@@ -5,7 +5,8 @@ interface IconButtonProps {
     iconSrc: string;
     alt: 'add' | 'delete' | 'addParent'
     onClickAdd: () => Promise<void>
-    isDisabled: boolean;
+    isDisabled: boolean
+    isEditing?: boolean
 }
 
 export const SuperButton: React.FC<IconButtonProps> = ({
@@ -13,6 +14,7 @@ export const SuperButton: React.FC<IconButtonProps> = ({
   alt,
   onClickAdd,
   isDisabled,
+  isEditing,
 }) => {
 
   return (
@@ -21,7 +23,7 @@ export const SuperButton: React.FC<IconButtonProps> = ({
         src={iconSrc}
         alt={alt}
         onClick={onClickAdd}
-        className={`${s.img} ${isDisabled ? s.disabled : ''}`}
+        className={`${s.img} ${isDisabled || isEditing ? s.disabled : ''}`}
       />
     </>
   );

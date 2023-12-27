@@ -63,6 +63,7 @@ export const ButtonsGroup: React.FC<IButtonsGroup> =  React.memo(({
         alt={'add'}
         onClickAdd={handleAddNewLine}
         isDisabled={addNewLineIsLoading}
+        isEditing={isEditing}
       />
       {addNewLineIsLoading && <div className={s.loadingLabel}>....добавление</div>}
       {addNewLineError && <h1 className={s.loadingLabel}>Ошибка при добавлении линии</h1>}
